@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageElement = document.getElementById('message');
     const submitButton = form.querySelector('.btn-submit');
 
-    // !!! PENTING: GANTI URL DI BAWAH INI DENGAN WEB APP URL ANDA !!!
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxV6xFjxiMWB_AgxoogapnRnWwHI2hyHZmMgqTVrTGD7MOOEIIO1VEBa8hVOiLYOIdVsw/exec'; 
-    // Contoh: 'https://script.google.com/macros/s/AKfycxxxxxxx/exec'
+    // !!! URL WEB APP BARU SUDAH DIPERBARUI DI SINI !!!
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwofxPUSjMkTheykZ7FTUjfewxMPNbKN9efE86GRyRNPt6gHdOMXUnjeGdC1s7TNQpdRA/exec'; 
     // ----------------------------------------------------------------
 
     form.addEventListener('submit', async function(event) {
@@ -61,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } catch (error) {
             console.error('Error saat mengirim data:', error);
-            showMessage('❌ Terjadi kesalahan saat menyimpan data. Pastikan URL Apps Script sudah benar.', 'error');
+            showMessage('❌ Terjadi kesalahan saat menyimpan data. Pastikan ID Sheet dan Deployment Apps Script sudah benar.', 'error');
         } finally {
             // 6. Kembalikan Tombol ke Keadaan Semula
             submitButton.disabled = false;
@@ -95,5 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
             messageElement.style.display = 'none';
         }, 5000);
     }
-
 });
