@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Data MCU - PT. Ching Luh Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="logo-chingluh.png" alt="Logo PT. Ching Luh Indonesia" class="header__logo">
+            <h1 class="header__title">Data Belum Menerima Hasil MCU</h1>
+            <p class="header__subtitle">PT. Ching Luh Indonesia</p>
+        </header>
+
+        <form id="mcuForm" class="form-card">
+            <div class="form-header">
+                <p class="form-header__note">⚠️ **WAJIB DI ISI KARYAWAN**</p>
+            </div>
+
+            <div class="form-group">
+                <label for="nip_nik" class="form-label">NIP/NIK:</label>
+                <input type="text" id="nip_nik" name="nip_nik" class="form-input" placeholder="Masukkan NIP atau NIK Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nama_peserta" class="form-label">Nama Peserta:</label>
+                <input type="text" id="nama_peserta" name="nama_peserta" class="form-input" placeholder="Nama lengkap sesuai data perusahaan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="no_handphone" class="form-label">No Handphone:</label>
+                <input type="tel" id="no_handphone" name="no_handphone" class="form-input" placeholder="Cth: 081234567890 (Aktif)" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-submit">
+                    💾 SIMPAN DATA
+                </button>
+            </div>
+            
+            <p id="message" class="message-status"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

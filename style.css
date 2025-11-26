@@ -1,0 +1,176 @@
+/* Global Reset and Base Styles */
+:root {
+    --primary-color: #007bff;
+    --accent-color: #28a745;
+    --text-color: #333;
+    --border-color: #ccc;
+    --bg-light: #f8f9fa;
+    --card-bg: #fff;
+    --warning-color: #dc3545;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Container dan Header */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --- PERUBAHAN LOGO STYLING --- */
+.header__logo {
+    max-width: 100px; /* Diperkecil dari 150px menjadi 100px */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+/* ------------------------------- */
+
+.header__title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+/* --- PERUBAHAN UKURAN TEKS PT. CHING LUH INDONESIA --- */
+.header__subtitle {
+    font-size: 1.3rem; /* Diperbesar dari 1.1rem menjadi 1.3rem */
+    color: #6c757d;
+    font-weight: 600; /* Dibuat lebih tebal agar lebih menonjol */
+}
+/* ---------------------------------------------------- */
+
+
+/* Form Card Style */
+.form-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.form-header {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    border-radius: 5px;
+}
+
+.form-header__note {
+    font-size: 1rem;
+    color: #856404;
+    font-weight: 600;
+}
+
+/* Form Group (Label + Input) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button Styling */
+.form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    width: 100%;
+}
+
+.btn-submit {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Status Message */
+.message-status {
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: none;
+}
+
+.message-status.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 0;
+    }
+    .form-card {
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .header {
+        margin-bottom: 20px;
+    }
+    /* Logo juga diperkecil di mobile */
+    .header__logo {
+        max-width: 80px; /* Lebih kecil lagi di mobile */
+    }
+}
