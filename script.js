@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = form.querySelector('.btn-submit');
 
     // !!! PENTING: GANTI URL DI BAWAH INI DENGAN WEB APP URL ANDA !!!
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxnZ1oU28rCSRugHWrMQ5I4iaRj_aPa81Nqctml9dYEk0LTns-10imSNcuVrazY5Ffj_g/exec'; 
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxV6xFjxiMWB_AgxoogapnRnWwHI2hyHZmMgqTVrTGD7MOOEIIO1VEBa8hVOiLYOIdVsw/exec'; 
     // Contoh: 'https://script.google.com/macros/s/AKfycxxxxxxx/exec'
     // ----------------------------------------------------------------
 
@@ -95,4 +95,5 @@ document.addEventListener('DOMContentLoaded', () => {
             messageElement.style.display = 'none';
         }, 5000);
     }
+
 });
