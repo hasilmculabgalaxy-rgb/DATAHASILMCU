@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = form.querySelector('.btn-submit');
 
     // !!! URL WEB APP BARU SUDAH DIPERBARUI DI SINI !!!
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwofxPUSjMkTheykZ7FTUjfewxMPNbKN9efE86GRyRNPt6gHdOMXUnjeGdC1s7TNQpdRA/exec'; 
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyjGodXbwOeotOYiwq_EoPLgUrdLchTmnXP7TDP2gJNbLzi5YX4cTpILZflDsIRvq0skw/exec'; 
     // ----------------------------------------------------------------
 
     form.addEventListener('submit', async function(event) {
@@ -95,3 +95,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 5000);
     }
 });
+
